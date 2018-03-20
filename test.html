@@ -1,0 +1,1078 @@
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+<base target="_blank">
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7">
+<meta name="keywords" content="金融，银行，保险，期货，黄金，外汇，债券，信托，理财，信用卡，央行，银监会，保监会，外汇局，贵金属，农产品">
+<meta name="description" content="中新网金融频道，是专业、权威的中央新闻金融门户，银行保险期货等金融机构新闻第一策源地。提供24小时不间断金融机构和金融市场的最新资讯、报道以及行情信息，以最快速度为您提供来自央行、银监会、保监会、外汇局等监管机构最新政策信息。"> 
+<title>中新网金融频道</title>
+<!--[51,66,1] published at 2016-07-14 14:51:23 from #10 by 左盛丹,designer:chenguanghua  maker:yanzhaoyu -->  
+<link href="" type="text/css" rel="stylesheet">
+<script type="text/javascript" src="http://lc.chinanews.com:8090/rpc/p.jsp?pid=0&amp;did=0&amp;t=%E4%B8%AD%E6%96%B0%E7%BD%91%E9%87%91%E8%9E%8D%E9%A2%91%E9%81%93&amp;u=http://fortune.chinanews.com/&amp;r=&amp;hostworkname=950611a5-ef2b-1cc1-9244-c31f424819cc13112.92903925579_1521459425874&amp;aj=0.1686271412456528Mon%20Mar%2019%202018%2019:37:05%20GMT+0800%20(CST)"></script><script src="//push.zhanzhang.baidu.com/push.js"></script><script src="//www.chinanews.com/js/jquery1.4.js"></script>
+<script language="JavaScript">
+<!--
+document.domain = "chinanews.com"; 
+-->
+</script>
+
+<script>
+    (function(){
+        var bp = document.createElement('script');
+        bp.src = '//push.zhanzhang.baidu.com/push.js';
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(bp, s);
+    })();
+</script>
+
+<script type="text/javascript" src="//www.chinanews.com/pv/js/pvnoju.js"></script>
+
+<script type="text/javascript">
+
+ function focusBox(o){
+	if(!o) return;
+	var w=584, $o=$('#'+o),i=0,l=0;arr= [],t= null,
+		$infoLi = $o.find('.banner_info li'), len= $infoLi.length*2,
+		$ul=$o.find('.banner_pic>ul');
+	$ul.append($ul.html()).css({'width':len*w, 'left': -len*w/2});
+	$infoLi.eq(0).addClass('current');
+	//add banner_pages element
+	arr.push('<div class="banner_pages"><ul>');
+	$infoLi.each(function(i){
+		if(i==0){
+			arr.push('<li class="current"><span>'+ (i+1) +'</span></li>');
+		}else{
+			arr.push('<li><span>'+ (i+1) +'</span></li>');
+		}
+	});
+	arr.push('</ul></div>');
+	$o.append(arr.join(''));
+	var $pagesLi = $o.find('.banner_pages li');
+	//mouse
+	$pagesLi.children('span').click(function(){
+		var p = $pagesLi.index($o.find('.banner_pages li.current'));
+		i = $pagesLi.children('span').index($(this));
+		if(i==p) return;
+		l = parseInt($ul.css('left')) + w*(p-i);
+		addCurrent(i,l);
+		return false;
+	})
+	if(len>2){
+		$("#kakaFocus .btn_prev").show();
+		$("#kakaFocus .btn_next").show();
+		$o.children('a.btn_prev').click(function(){
+			i = $pagesLi.index($o.find('.banner_pages li.current'));
+			(i==0)? i=(len/2-1):i--;
+			l = parseInt($ul.css('left')) + w;
+			addCurrent(i,l);
+			return false;
+		})
+		$o.children('a.btn_next').click(function(){
+			i = ($pagesLi.index($o.find('.banner_pages li.current'))+1)%(len/2);
+			l = parseInt($ul.css('left')) - w;
+			addCurrent(i,l);
+			return false;
+		})
+	}else{
+		$("#kakaFocus .btn_prev").hide();
+		$("#kakaFocus .btn_next").hide();
+	}
+
+	//auto focus
+	t = setInterval(init,8000);
+	$o.hover(function(){
+		clearInterval(t);
+	}, function(){
+		if(len>2){
+			t = setInterval(init,8000);
+		}
+
+	});
+	function init(){
+		$o.children('a.btn_next').trigger('click');
+	}
+	//add focus
+	function addCurrent(i,l){
+		if($ul.is(':animated')) return;
+		$ul.animate({'left':l},500,function(){
+			$o.children('.banner_count').text(i+1);
+			$infoLi.not($infoLi.eq(i).addClass('current')).removeClass('current');
+			$pagesLi.not($pagesLi.eq(i).addClass('current')).removeClass('current');
+			if(l== (1-len)*w){
+				$ul.css({'left': (1-len/2)*w});
+			}else if(l== 0){
+				$ul.css({'left': -len*w/2});
+			}
+		});
+	}
+}
+
+$(function(){
+	focusBox('kakaFocus');
+})
+
+$(document).ready(function(){
+	var ullength = $("#kakaFocus .banner_pic ul li");	
+	//console.log(ullength);
+	if(ullength.length > 2){
+		$("#kakaFocus").mouseover(function(){
+			$("#lrbt_show1").show();
+			$("#lrbt_show2").show();
+			});
+		$("#kakaFocus").mouseout(function(){
+			$("#lrbt_show1").hide();
+			$("#lrbt_show2").hide();
+			});
+
+   }else{
+		$("#lrbt_show1").hide();
+		$("#lrbt_show2").hide();
+   }
+});
+
+function focusBox1(o1){
+	if(!o1) return;
+
+	var w1=$("#kakaFocus1 .banner1_pic").width(), $o1=$('#'+o1),i=0,l=0;arr1= [],t1= null,
+
+		$infoLi1 = $o1.find('.banner1_info li'), len1= $infoLi1.length*2,
+		$ul1=$o1.find('.banner1_pic>ul');
+	$ul1.append($ul1.html()).css({'width':len1*w1, 'left': -len1*w1/2});
+	$infoLi1.eq(0).addClass('current');
+	//add banner1_pages element
+	arr1.push('<div class="banner1_pages"><ul>');
+	$infoLi1.each(function(i){
+		if(i==0){
+			arr1.push('<li class="current"><span>'+ (i+1) +'</span></li>');
+		}else{
+			arr1.push('<li><span>'+ (i+1) +'</span></li>');
+		}
+	});
+	arr1.push('</ul></div>');
+	$o1.append(arr1.join(''));
+	var $pagesLi1 = $o1.find('.banner1_pages li');
+	//mouse
+	$pagesLi1.children('span').click(function(){
+		var p1 = $pagesLi1.index($o1.find('.banner1_pages li.current'));
+		i1 = $pagesLi1.children('span').index($(this));
+		if(i1==p1) return;
+		l1 = parseInt($ul1.css('left')) + w1*(p1-i1);
+		addCurrent1(i1,l1);
+		return false;
+	})
+	$o1.children('a.btn_prev').click(function(){
+		i1 = $pagesLi1.index($o1.find('.banner1_pages li.current'));
+		(i1==0)? i1=(len1/2-1):i1--;
+		l1 = parseInt($ul1.css('left')) + w1;
+		addCurrent1(i1,l1);
+		return false;
+	})
+	$o1.children('a.btn_next').click(function(){
+		i1 = ($pagesLi1.index($o1.find('.banner1_pages li.current'))+1)%(len1/2);
+		l1 = parseInt($ul1.css('left')) - w1;
+		addCurrent1(i1,l1);
+		return false;
+	})
+	//auto focus
+	t1 = setInterval(init1,8000);
+	$o1.hover(function(){
+		clearInterval(t1);
+	}, function(){
+		t1 = setInterval(init1,8000);
+	});
+	function init1(){
+		$o1.children('a.btn_next').trigger('click');
+	}
+	//add focus
+	function addCurrent1(i,l){
+		if($ul1.is(':animated')) return;
+		$ul1.animate({'left':l},500,function(){
+			$o1.children('.banner1_count').text(i+1);
+			$infoLi1.not($infoLi1.eq(i).addClass('current')).removeClass('current');
+			$pagesLi1.not($pagesLi1.eq(i).addClass('current')).removeClass('current');
+			if(l== (1-len1)*w1){
+				$ul1.css({'left': (1-len1/2)*w1});
+			}else if(l== 0){
+				$ul1.css({'left': -len1*w1/2});
+			}
+		});
+	}
+}
+
+$(function(){
+	focusBox1('kakaFocus1');
+})
+
+$(document).ready(function(){
+	$("#kakaFocus1").mouseover(function(){
+		$("#lrbt_show11").show();
+	    $("#lrbt_show21").show();
+		});
+	$("#kakaFocus1").mouseout(function(){
+	  	$("#lrbt_show11").show();
+		$("#lrbt_show21").show();
+		});
+	});
+
+<!--回顾-->
+
+    					<!---->
+
+function checksubmit(){
+    var code = event.keyCode;
+
+    if(code == 13) submitFun();
+  }
+
+function submitFun() {
+
+var hotword=document.getElementsByName('q')[0].value;
+
+if (hotword==''){
+
+alert('请输入关键字!');
+
+return false;
+
+}
+else
+{
+
+$.ajax({
+  type: "GET",
+  url: "http://lc.chinanews.com:8090/rpc/pa.jsp?pid=1&paid=50&u=sousuo&aj="+encodeURI(Math.random()+ (new Date())),
+  dataType: "jsonp"
+});
+
+if(document.getElementsByName('s0')[0].value=='cns')
+{
+
+ window.open("http://sou.chinanews.com/search.do?q="+encodeURIComponent(hotword));
+ }
+ else if(document.getElementsByName('s0')[0].value=='baidu')
+ {
+ window.open("http://www.baidu.com/s?ie=utf-8&bs=%E4%B8+%9B%BD&sr=&z=&cl=3&f=8&wd="+encodeURIComponent(hotword)+"&ct=0");
+ }
+
+}
+
+}
+
+      $(function(){
+		  $('.menuTop').hover(function(){
+			     $(this).children('#ewm').css ({display:'block'});
+		  }, function(){
+			  $(this).children('#ewm').css ({display:'none'});
+
+			  })
+		  })
+
+</script>
+<script type="text/javascript" src="//finance.chinanews.com/finance/13/2016-07-18/33.js"></script>
+<link href="//finance.chinanews.com/finance/13/2016-07-18/32.css" type="text/css" rel="stylesheet">
+
+</head>
+
+<body>
+<div id="index_topa">
+<a name="visit_top"></a>
+<div style=" width:100%; margin:0 auto;">
+
+<style>
+.index_icon14 {
+    background: url(http://www.chinanews.com/fileftp/2015/09/2015-09-06/U435P4T47D33340F978DT20150907155559.png) no-repeat ;
+    display: block;
+    height: 13px;
+    width: 18px;
+}
+
+ul.c-fl-ul .topnav_sel .index_icon14 {
+    background: url(http://www.chinanews.com/fileftp/2015/09/2015-09-06/U435P4T47D33340F979DT20150907155559.png) no-repeat ;
+}
+.index_icon_gzh{background:url(http://i2.chinanews.com/2013/news/newnc/images/wx_mo.png) no-repeat;display:block;width:24px;height:19px;}
+ul.c-fl-ul .topnav_sel .index_icon_gzh{background:url(http://i2.chinanews.com/2013/news/newnc/images/wx_sel.png) no-repeat;}
+.index-nav-select-wide .index-nav-select-title-gzh{padding:0px 10px 0px 43px}
+
+</style>
+
+<div id="js_N_nav" class="index-nav" style="height:46px;">
+    <div class="index-nav-main clearfix">
+        <div id="stepflow01" class="c-fl">
+        	<ul class="c-fl-ul">
+            	<li class="division"><div class="index-nav-select    left">
+              	     <a href="//www.chinanews.com" class="index-nav-select-title index-nav-entry-bgblack"><em class="index-nav-select-arr index_icon1"></em>中新网首页</a></div>
+                </li>
+
+                <li id="jrzmdiv" class="division"> <div class="index-nav-select    left">
+               		 <a href="//www.chinanews.com/common/footer/sitemap.shtml" class="index-nav-select-title index-nav-entry-bgblack"><em class="index-nav-select-arr index_icon14"></em>网站地图</a> </div>
+                </li>
+
+               <li class="division"><div class="index-nav-select    left">
+                	<a href="//mail.chinanews.com.cn/" class="index-nav-select-title index-nav-entry-bgblack"><em class="index-nav-select-arr index_icon12"></em>企业邮箱</a></div>
+               </li>
+
+               <li class="division"><div class="index-nav-select    left">
+               		 <a class="index-nav-select-title index-nav-entry-bgblack" href="//www.chinaso.com/"><em class="index-nav-select-arr index_icon11"></em>中国搜索</a></div>
+               </li>
+             </ul>
+        </div>
+        <div class="c-fr">
+            <ul class="c-fl-ul">
+            	<li id="jrzmdiv1" class="division"> <div class="index-nav-select    left">
+                    <a class="index-nav-select-title index-nav-entry-bgblack" href="//m.chinanews.com/home/"><em class="index-nav-select-arr index_icon4"></em>移动版</a></div>
+                 </li>
+                 <li id="jrzmdiv1" class="division"> <div class="index-nav-select    left">
+                     <a href="//www.chinanews.com/app/chinanews/index.shtml" class="index-nav-select-title index-nav-entry-bgblack"><em class="index-nav-select-arr index_icon13"></em>客户端</a></div>
+                 </li>
+                  <li id="jrzmdiv1" class="division"> 
+				 <div class="index-nav-select left">
+                <div class="newpic"></div>
+                <a class="index-nav-select-title index-nav-entry-bgblack" href="//www.chinanews.com/cns2012.shtml"><em class="index-nav-select-arr index_icon_gzh"></em>微信</a>
+
+             </div>
+             </li>
+                 <li id="jrzmdiv2" class="division"> <div class="index-nav-select  index-nav-app left ">
+                      <div style="_width:90px;" class="dii81" id="id8" onmouseover="weibo(0)" onmouseout="weibo(1)">
+                           <div id="navshow_div" class="index-nav-select-pop">
+                                <ul class="index-nav-select-list clearfix">
+                                    <!-- <li><a href="//t.chinanews.com/"><span>中新职务微博</span></a></li>-->
+                                    <li><a href="//weibo.com/chinanewsv"><span>中新网<em>新浪</em>法人微博</span></a></li>
+                                    <li><a href="//t.qq.com/chinanews"><span>中新网<em>腾讯</em>法人微博</span></a></li>
+                                     <li><a href="//weibo.com/u/3604378011"><span>中新社<em>新浪</em>法人微博</span></a></li>
+                                     <li><a href="//t.qq.com/cns"><span>中新社<em>腾讯</em>法人微博</span></a></li>
+
+                                     <!--
+                                     <li><a href="//1.t.qq.com/cns"><span>中新社<em >腾讯</em>法人微博</span></a></li>
+                                    <li><a href="//chinanewsv.t.sohu.com/"><span>中新网<em >搜狐</em>法人微博</span></a></li>
+                                    <li><a href="//t.163.com/chinanews"><span>中新网<em >网易</em>法人微博</span></a></li>-->
+
+                                </ul>
+                            </div>
+                        <a class=" p_relative index-nav-select-title1  index-nav-entry-bgblack "><em class="index-nav-select-arr1"></em>
+                        <em class="index-nav-select-arr index_icon5"></em>微博
+                         </a>
+                        </div>
+                    </div>
+                 </li>
+                <li class="division"> <a href="//www.ecns.cn/" class="index-nav-entry-wide index-nav-select-title left">English</a></li>
+               <!-- <li class="division">  <a href="//big5.chinanews.com:80/" class="index-nav-entry-wide index-nav-select-title left">繁体</a></li>-->
+				<li class="division"><fjtignoreurl><a id="yx_style_nav" class="index-nav-entry-wide left" href="//wza.chinanews.com/" style="color:#b21112">无障碍</a></fjtignoreurl></li>
+            </ul>
+
+        </div>  
+
+        <div class="clear"></div>  
+    </div>
+</div>
+
+<div class="gn_top" id="gn_top">
+
+<div id="top">
+
+        <!--[4,319,36] published at 2016-01-13 16:04:43 from #10 by 张晶-->  
+<!--[4,319,36] published at 2017-12-04 16:23:29 from #10 by 闫兆玉-->  
+<style>
+
+#top{width:1000px;}
+
+</style>
+
+        <a href="//www.chinanews.com/scroll-news/news1.html" target="_blank">滚动</a>|
+        <a href="//www.chinanews.com/china/" target="_blank">时政</a>|
+        <a href="//world.chinanews.com/" target="_blank">国际</a>|
+        <a href="//www.chinanews.com/mil/news.shtml" target="_blank">军事</a>|
+        <a href="//www.chinanews.com/society/" target="_blank">社会</a>| <a href="//www.chinanews.com/gangao/" target="_blank">港澳</a>|
+        <a href="//www.chinanews.com/taiwan/" target="_blank">台湾</a>|
+        <a href="//www.chinaqw.com/" target="_blank">侨网</a>| 
+        <a href="//www.jwview.com/" target="_blank">经纬</a>|
+        <a href="//www.chinanews.com/huaren/" target="_blank">华人</a>| <a href="//finance.chinanews.com/" target="_blank">财经</a>|
+        <a href="//business.chinanews.com/" target="_blank">产经</a>|
+        <a target="_blank" href="//fortune.chinanews.com/">金融</a>|
+        <!--<a href="//stock.chinanews.com/" target="_blank">证券</a>|
+        <a href="//house.chinanews.com/" target="_blank">房产</a>|
+        <a href="//energy.chinanews.com/" target="_blank">能源</a>|
+        <a href="//it.chinanews.com/" target="_blank">IT</a>|-->
+        <a href="//auto.chinanews.com/" target="_blank">汽车</a>|<!--<a href="//game.chinanews.com/" target="_blank">游戏</a>|-->
+        <a href="//ent.chinanews.com/">娱乐</a>|
+        <a href="//sports.chinanews.com/" target="_blank">体育</a>|
+        <a href="//cul.chinanews.com/" target="_blank">文化</a>|
+       <!-- <a href="//health.chinanews.com/" target="_blank">健康</a>|-->
+       <a href="//www.chinanews.com/theory/">理论</a>|
+        <a href="//life.chinanews.com/" target="_blank">生活</a>|
+        <a href="//photo.chinanews.com/" target="_blank">图片</a>|
+        <a href="//www.chinanews.com/shipin/" target="_blank">视频</a>|
+        <a href="//www.chinanews.com/live.shtml" target="_blank">直播</a>
+
+
+</div>
+
+     <div style="width:1000px;margin:0 auto; margin-top:10px;" id="">
+
+<div style="width:750px;float:left;height:90px;">
+
+<!--[4,396,376] published at 2017-11-20 08:36:22 from #10 by 郑振海--> 
+
+    <object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=7,0,19,0" width="750" height="90">
+      <param name="movie" value="http://www.chinanews.com/fileftp/2017/11/2017-11-06/U194P4T47D40717F979DT20171106105306.swf">
+      <param name="quality" value="high">
+      <embed src="http://www.chinanews.com/fileftp/2017/11/2017-11-06/U194P4T47D40717F979DT20171106105306.swf" quality="high" pluginspage="http://www.macromedia.com/go/getflashplayer" type="application/x-shockwave-flash" width="750" height="90">
+    </object>
+
+</div>
+
+<div style="width:230px;float:right;height:90px;">
+
+<!--[4,396,377] published at 2017-11-27 08:43:04 from #10 by 郑振海--> 
+<a href="http://www.sinopecgroup.com/group/" target="_blank"><img src="http://i8.chinanews.com/gg/141013/zsh.jpg" width="230" height="90"></a>
+
+</div>
+
+         <div class="clear"></div>
+     </div>
+      <div class="cj_banner" style="margin-top:10px;">
+            <div class="cj_logo"><a><img src="http://www.chinanews.com/fileftp/2016/06/2016-06-02/U664P4T47D35108F974DT20160714152848.jpg"></a></div>
+            <div class="searchnav">
+                 <div class="gn_text"> 
+                         <div class="strip">
+<!--[4,248,1] published at 2016-07-14 14:01:02 from #202 by system-->
+<!--[4,248,1] published at 2018-03-19 19:01:01 from #202 by system-->
+2018年03月19日   星期一</div>
+                         <div class="strip"> 
+
+<div id="info"></div>
+</div>           
+              </div>
+                    <div class="searchinput right">
+					<input value="请输入关键字" onclick="this.value='',this.style.color='#000'" name="q" id="q" class="search_input" onkeydown="checksubmit()" type="text">
+
+                    <div class="search_listbox"> 
+
+                <div style="_position:relative;padding:0px;margin:0px;" onmouseout="search_select(1)" onmouseover="search_select(0)" class="dii7" id="id7">
+                     <div class="select_border">
+
+<div class="select_container">
+                     <select id="s0" name="s0" class="selectnews"> 
+<option value="cns">中 新</option> 
+<option value="baidu">百 度</option> 
+
+</select> 
+</div>
+</div></div>      
+
+                    </div>
+                    <a class="search_a" onclick="submitFun()">搜 索</a>
+					<div class="clear"></div>
+				 </div>
+                    <div class="clear"></div>
+        </div>
+           <div class="clear"></div>
+        </div>
+<style>
+#nav{font-family:"微软雅黑";}
+</style>
+<div style="margin:0 auto;width:1000px; border-bottom:solid 4px #456495; margin-top:10px;"></div>
+
+  </div>
+  </div>
+  <!--头部结束-->
+<!--右侧导航-->
+
+ <script>
+        $(document).ready(function(){
+
+            $("#closebt").click(function(){
+                $(".ewm_box").hide();
+            })
+
+        });
+    </script>
+    <div class="ewm_box">
+        <a class="closebt" id="closebt"></a>
+        <div class="ewm_boxp">
+            <div class="beijing"><img src="http://i8.chinanews.com/2014/hwbz/images/ewm.jpg"></div>
+            <p>中新网客户端<br>
+                点击或扫描下载</p>
+        </div>
+    </div>
+    <div class="index_layer_back ie6fixedBR" id="newsbacktop" style="display: none; right: 101px;">
+        <ul class="index_layerul">
+
+            <li class="back" style="height:50px;"><div class="back-to-top" title="Back To Top">
+                <a id="backtop" href="#inter_top" target="_self"></a>
+            </div></li>
+
+        </ul>
+    </div>
+    <script>
+        (function() {
+            var backToTopTxt = $(".index_layer_back").html(),
+                    backToTopEle = backToTopTxt, backToTopFun = function() {
+                        var stback1 = $(document).scrollTop(), winh = $(window).height();
+                        (stback1>0)? $(".index_layer_back").show(): $(".index_layer_back").hide();
+                        //IE6下的定位
+                        if (!window.XMLHttpRequest) {
+                            $(".index_layer_back").css("top", stback1 + winh - 550);
+                        }
+                    };
+            $(window).bind("scroll", backToTopFun);
+            backToTopFun();
+
+        })();
+        var screenwidth=$(window).width(); //浏览器当前窗口可视区域宽度
+        //$("#layer").css("right",((screenwidth -1004) /2)-100);
+
+        Box1=document.getElementById("newsbacktop");
+
+        Box1.style.right = ((screenwidth -1004) /2)-80 + "px";
+
+        if(screenwidth <= 1024){
+            Box.style.right =0+"px";
+            Box1.style.right =0+"px";
+        }
+
+        $(window).resize(function() {
+            var screenwidth=$(window).width(); //浏览器当前窗口可视区域宽度
+//$("#layer").css("right",((screenwidth -1004) /2)-100);
+
+            Box1=document.getElementById("newsbacktop");
+
+            Box1.style.right = ((screenwidth -1004) /2)-80 + "px";
+            if(screenwidth <= 1024){
+                Box.style.right =0+"px";
+                Box1.style.right =0+"px";
+            }
+        });
+
+    </script>
+
+<style>
+.nav03-title  a:hover{color:#96aad5;}
+#navigation span p{font-size:13px;}
+
+.scroll {
+  height: 20px;
+  margin: 0px 20px 15px 0px;
+  line-height: 20px;
+  float: left;
+}
+
+</style>
+<div class="blank15"></div>
+
+<div class="w1000" style="margin-bottom:18px;height:340px;" id="daodu">
+
+<div class="yw_right">
+
+<div class="banner" id="kakaFocus"> 
+	<a class="btn_prev" id="lrbt_show1" style="display: inline;" title="上一个" href="#">Previous</a> 
+	<a class="btn_next" id="lrbt_show2" style="display: inline;" title="下一个" href="#">Next</a> 
+
+<div class="banner_pic" id="gdt"> 
+		<ul style="width: 2336px; left: -1168px;">
+			<li><a href="//www.chinanews.com/fortune/2018/03-19/8470956.shtml"><img src="http://www.chinanews.com/fortune2014_home/U322P51T45D1F1417DT20180319164133.jpg" alt="保监会：深度贫困地区保险分支机构在脱贫前不得撤销" width="584" height="320"></a></li>
+			<li><a href="//www.chinanews.com/fortune/2018/03-19/8471219.shtml"><img src="http://www.chinanews.com/fortune2014_home/U322P51T45D1F1421DT20180319164133.jpg" alt="BATJ积极布局保险业 “保险科技”时代来临" width="584" height="320"></a></li>
+
+		
+			<li><a href="//www.chinanews.com/fortune/2018/03-19/8470956.shtml"><img src="http://www.chinanews.com/fortune2014_home/U322P51T45D1F1417DT20180319164133.jpg" alt="保监会：深度贫困地区保险分支机构在脱贫前不得撤销" width="584" height="320"></a></li>
+			<li><a href="//www.chinanews.com/fortune/2018/03-19/8471219.shtml"><img src="http://www.chinanews.com/fortune2014_home/U322P51T45D1F1421DT20180319164133.jpg" alt="BATJ积极布局保险业 “保险科技”时代来临" width="584" height="320"></a></li>
+
+		</ul> 
+	</div>
+	<div class="banner_info">
+		<ul>
+			<li class="current"><a href="//www.chinanews.com/fortune/2018/03-19/8470956.shtml">保监会：深度贫困地区保险分支机构在脱贫前不得撤销</a></li>
+			<li class=""><a href="//www.chinanews.com/fortune/2018/03-19/8471219.shtml">BATJ积极布局保险业 “保险科技”时代来临</a></li>
+
+		</ul>
+	</div>
+
+<div class="banner_info_bg"></div>
+
+<div class="banner_pages"><ul><li class="current"><span>1</span></li><li class=""><span>2</span></li></ul></div></div>
+</div>
+<!--焦点图右边-->
+<style>.yw_left .top_yw li{ list-style-type:disc;}</style>
+<div class="yw_left">
+<div class="top_yw">
+<div style=" padding-bottom:4px; margin-bottom:4px;">
+<h1 style="font-size:18px;">
+<a href="//www.chinanews.com/fortune/2018/03-19/8471211.shtml">场外配资潜行江湖 监管利剑斩“藤”摸“瓜”</a>
+</h1>
+<span><li><a href="//www.chinanews.com/fortune/2018/03-19/8471219.shtml">BATJ积极布局保险业 “保险科技”时代来临</a></li><li><a href="//www.chinanews.com/fortune/2018/03-19/8471218.shtml">57家保险中介受罚 四川开出193万元罚款</a></li><li><a href="//www.chinanews.com/fortune/2018/03-19/8470956.shtml">保监会：深度贫困地区保险分支机构在脱贫前不得撤销</a></li><li><a href="//www.chinanews.com/fortune/2018/03-19/8470801.shtml">人民币对美元汇率中间价报6.3320元 上调20个基点</a></li></span>
+</div>
+
+<div style=" padding-bottom:4px;">
+<h1 style="font-size:18px;">
+<a href="//www.chinanews.com/cj/2018/03-19/8470871.shtml">全市场系统演练完成 原油期货上市准备就绪</a>
+</h1>
+<span><li><a href="//www.chinanews.com/fortune/2018/03-19/8471216.shtml">美联储加息在即 港股资金面或承压</a></li><li><a href="//www.chinanews.com/fortune/2018/03-19/8471212.shtml">黑色系经营风险盘根错节 寄望期货“钢铁侠”</a></li><li><a href="//www.chinanews.com/stock/2018/03-19/8470737.shtml">盘前：短期将有方向选择 指数整理后仍有上行基础</a></li><li><a href="//www.chinanews.com/cj/2018/03-19/8470649.shtml">2688元“炒股神器”能多赚少亏？ 律师提醒警惕风险 </a></li></span>
+</div>
+
+</div>
+
+</div>
+
+<div class="clear"></div>
+</div>
+
+<div class="w1000" id="yaowen">
+ 	<div class="mt10">
+   		<div class="enter_left">
+        	<style>.line{width:250px;height:37px;border-bottom:solid 1px #456495;}
+             .right1{
+            width: 300px;
+            height: 28px;
+            text-align: right;
+            font-size: 12px;
+            border-bottom: 1px solid #456495;
+			margin-left:101px;
+             +margin-left:0px;
++width:300px;
+        }
+
+         .right1 a{
+            color: #A8A8A8;
+        }
+		.blue{color:#456495;}
+
+		.enter_right_l {
+    width: 230px;
+    float: left;
+}
+
+.module_right_paihang .leftimg {
+	float:Left;
+	width:100px;
+
+	height:70px;
+	overflow:HIdden;
+margin-left: 10px;
+margin-right: 10px;
+}
+
+.module_right_paihang .leftimg img {
+	width:100px;
+
+	height:70px;
+}
+.life_left_ul li {
+    height: 28px;
+    line-height: 28px;
+    font-size: 14px;
+    background: url(http://i8.chinanews.com/2014/cul/dot_gray.jpg) no-repeat 13px 13px;
+    padding-left: 28px;
+    width: 90%; 
+    overflow: hidden;
+}
+
+            </style>
+
+                <div class="life_title_chihe ">
+                    <div class="life_title_chihe_left">市场要闻</div>
+                    <div class="right1"><a href="//channel.chinanews.com/cns/cl/stock-scyw.shtml"><span style="font-family: '宋体';">十</span>更多</a></div>
+                </div>
+
+                <div class="mt10">
+
+            <div class="life_left_ulr ">
+                        <ul>
+
+                          <li><a href="//www.chinanews.com/fortune/2018/03-19/8471287.shtml">国家外汇局：中国跨境资金流动保持总体平衡</a></li><li><a href="//www.chinanews.com/stock/2018/03-19/8471158.shtml">菲达环保涉嫌信披违规 公司去年业绩巨亏</a></li><li><a href="//www.chinanews.com/stock/2018/03-19/8471149.shtml">年报将密集披露，关注业绩超预期个股</a></li><li><a href="//www.chinanews.com/stock/2018/03-19/8471061.shtml">“独角兽”望继续逞强 A股三领域或受关注</a></li><li><a href="//www.chinanews.com/fortune/2018/03-19/8471025.shtml">央行开出亿元级罚单 民生、平安两银行违规清算被罚</a></li><li><a href="//www.chinanews.com/stock/2018/03-19/8470737.shtml">盘前：短期将有方向选择 指数整理后仍有上行基础</a></li><li><a href="//www.chinanews.com/stock/2018/03-16/8469042.shtml">次新股集体跳水 养元饮品19天破发</a></li>
+                        </ul>
+                    </div>
+                </div>
+        </div>
+        <div class="enter_right">
+        	<div class="enter_right_l">
+
+<div class="life_title_chihe ">
+                <div class="life_title_chihe_left">理财之道</div>
+               <div class="right1" style="width:130px;+width:240px;+margin-left:0px;"><a href="//channel.chinanews.com/cns/cl/fortune-lccp.shtml"><span style="font-family: '宋体';">十</span>更多</a></div>
+            </div>
+            <div class="mt10">
+            <div class="module_right_paihang  ">
+
+                    <div class="leftimg">
+<a href="//www.chinanews.com/cj/2018/03-19/8470649.shtml"><img src="http://www.chinanews.com/fortune2014_home/U322P51T45D55F1417DT20180205154717.jpg" width="156" height="99"></a>
+</div>
+<div class="righttext">
+<p><a href="//www.chinanews.com/cj/2018/03-19/8470649.shtml">2688元“炒股神器”能多赚少亏？</a></p>
+<span></span><a href="//www.chinanews.com/cj/2018/03-19/8470649.shtml"><span style="color:#06F">[详细]</span></a>
+</div>
+
+                      <div class="clear"></div>
+            </div>
+             <div class="life_left_ul  mt10">
+
+                <ul>
+
+                          <li><a href="//www.chinanews.com/fortune/2018/03-08/8462851.shtml">老人被劝买基金亏本 银行：是否误导难查清</a></li><li><a href="//www.chinanews.com/fortune/2018/03-08/8462568.shtml">黄金是否值得配置？今年或先跌后涨</a></li><li><a href="//www.chinanews.com/fortune/2018/03-05/8460298.shtml">网贷平台备战“大考”</a></li><li><a href="//www.chinanews.com/fortune/2018/03-05/8460293.shtml">IPO绿色通道：未来可在A股买四类独角兽</a></li>
+                </ul>
+            </div>
+
+            </div>
+
+            </div>
+            <div class="enter_right_r">
+           	  <div class="life_title_chihe ">
+                <div class="life_title_chihe_left">上市公司</div>
+               <div class="right1" style="width:218px;"><a href="//channel.chinanews.com/cns/cl/stock-gsxw.shtml"><span style="font-family: '宋体';">十</span>更多</a></div>
+            </div>
+
+                <div class="mt10">
+
+            <div class="life_left_ulr ">
+                        <ul>
+
+                           <li><a href="//www.chinanews.com/fortune/2018/03-15/8468388.shtml">迅雷去年四季度营收增128.5% 称将优化玩客云</a></li><li><a href="//www.chinanews.com/fortune/2018/03-13/8467008.shtml">顺丰去年营收711亿元 票均收入回升达到23.14元</a></li><li><a href="//www.chinanews.com/fortune/2018/03-07/8461665.shtml">工行首发粤港澳湾区信用卡 促进跨境经济合作交流</a></li><li><a href="//www.chinanews.com/fortune/2018/03-06/8460813.shtml">中国平安蝉联Brand Finance全球第一保险品牌</a></li><li><a href="//www.chinanews.com/fortune/2018/03-05/8460297.shtml">工行3600亿票据贴现力挺小微企业</a></li><li><a href="//www.chinanews.com/fortune/2018/03-05/8460255.shtml">国内IPO变革 首家AI创业公司走上“快速通道”</a></li><li><a href="//www.chinanews.com/fortune/2018/02-24/8453732.shtml">证监会：IPO被否企业3年后才可筹划重组上市</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="clear"></div>
+        </div>
+        <div class="clear"></div>
+
+    </div>
+    </div>
+
+</div>
+
+<style>.news_lookmore{width:645px;}.tab-list li a {float:left;}</style>
+<!--正文开始-->
+<div class="w1000 m_center">
+
+<div class="mt10">
+<!--正文左边-->
+     <div class="gn_main_left" id="sticky_left" style="width:650px;">
+     <div id="jsxw_layer" style="position:relative; top:0px;">
+          <div style="background:#476694; height:1px;overflow: hidden;"></div>
+
+                   <div id="jsxwredbox_Con1" style="display:block;">
+           <ul class="tab-list" id="jsxw_sp">                
+                    <li class="filter-selected" onclick="js_jsxwssp(this,0);">    
+                        <a class="filter-name">最新</a></li>
+
+            </ul>
+                  <div class="clear"></div>
+
+       </div>
+       </div>
+
+     <!---->
+     <div class="news_list_ulbox">
+              <div id="jsxw_sp_Con0" style="display:block;">
+
+                     <ul class="news_list_ul" id="ent0">
+                    	 <!--滚动新闻-->
+
+						<!--滚动新闻-->
+
+                             <!--滚动新闻-->
+
+						 <!--滚动新闻-->
+
+						<li>
+                      <div class="bigpic_list">
+
+               	    <div class="moren_right_nopic">
+                        	<div class="news_title"><em><a href="//www.chinanews.com/fortune/2018/03-19/8471294.shtml">上海：互联网金融安全成投诉新热点</a></em></div>
+                            <div class="intermoren_box">
+
+                            <div class="intermoren_right intermoren_right1">
+                            <div class="news_content"><a href="//www.chinanews.com/fortune/2018/03-19/8471294.shtml" class="gray5">
+
+中新网上海3月19日电 (记者 陈静)上海市消保委19日披露，互联网金融的安全性成为投诉新热点。
+
+该委当日透露了2018年3·15期间(3月13日—15日)该委受理投诉的情况。据统计，期间，上海市消保委受理了3056件投诉。除了互联网金融安全问题，新型租...</a><a href="//www.chinanews.com/fortune/2018/03-19/8471294.shtml" class="blue">[详情]</a></div>                         
+
+                         <div class="news_source">
+                            <div class="left">2018年3月19日 18:53 </div>
+
+                            </div>
+</div> </div>
+                        </div>
+                        </div>
+
+                    </li>
+
+						<li>
+                      <div class="bigpic_list">
+
+               	    <div class="moren_right_nopic">
+                        	<div class="news_title"><em><a href="//www.chinanews.com/fortune/2018/03-19/8471287.shtml">国家外汇局：中国跨境资金流动保持总体平衡</a></em></div>
+                            <div class="intermoren_box">
+
+                            <div class="intermoren_right intermoren_right1">
+                            <div class="news_content"><a href="//www.chinanews.com/fortune/2018/03-19/8471287.shtml" class="gray5">
+
+资料图：银行工作人员清点货币。中新社记者 张云 摄
+
+中新社北京3月19日电 (记者 魏晞)当前，中国跨境资金流动保持总体平衡。
+
+19日，中国国家外汇管理局新闻发言人就今年2月份中国跨境资金流动情况答记者问时表示，中国外汇市场供求平衡...</a><a href="//www.chinanews.com/fortune/2018/03-19/8471287.shtml" class="blue">[详情]</a></div>                         
+
+                         <div class="news_source">
+                            <div class="left">2018年3月19日 18:47 </div>
+
+                            </div>
+</div> </div>
+                        </div>
+                        </div>
+
+                    </li>
+
+						<li>
+                      <div class="bigpic_list">
+
+               	    <div class="moren_right_nopic">
+                        	<div class="news_title"><em><a href="//www.chinanews.com/fortune/2018/03-19/8471219.shtml">BATJ积极布局保险业 “保险科技”时代来临</a></em></div>
+                            <div class="intermoren_box">
+
+                            <div class="intermoren_right intermoren_right1">
+                            <div class="news_content"><a href="//www.chinanews.com/fortune/2018/03-19/8471219.shtml" class="gray5">
+
+BATJ积极布局保险业 “保险科技”时代来临
+
+■本报记者 苏向杲
+
+保险科技正如火如荼。
+
+“自2012年至2017年底，保险科技行业发生的私募股权交易总金额超过113亿元，其中众安保险以超过57亿元占据半壁江山，其他未上市保险科技企业通过私募股...</a><a href="//www.chinanews.com/fortune/2018/03-19/8471219.shtml" class="blue">[详情]</a></div>                         
+
+                         <div class="news_source">
+                            <div class="left">2018年3月19日 16:36 </div>
+
+                            </div>
+</div> </div>
+                        </div>
+                        </div>
+
+                    </li>
+
+						<li>
+                      <div class="bigpic_list">
+
+               	    <div class="moren_right_nopic">
+                        	<div class="news_title"><em><a href="//www.chinanews.com/fortune/2018/03-19/8471218.shtml">57家保险中介受罚 四川开出193万元罚款</a></em></div>
+                            <div class="intermoren_box">
+
+                            <div class="intermoren_right intermoren_right1">
+                            <div class="news_content"><a href="//www.chinanews.com/fortune/2018/03-19/8471218.shtml" class="gray5">
+
+57家保险中介受罚 四川开出193万元罚款
+
+■本报见习记者 涂 伟
+
+2018年保险行业监管部门延续2017年强监管的风格，对各类保险机构违规经营活动进行了强有力的监管和处罚，据《证券日报》记者统计，2018年开年至3月17日，监管部门对保险中介机构...</a><a href="//www.chinanews.com/fortune/2018/03-19/8471218.shtml" class="blue">[详情]</a></div>                         
+
+                         <div class="news_source">
+                            <div class="left">2018年3月19日 16:35 </div>
+
+                            </div>
+</div> </div>
+                        </div>
+                        </div>
+
+                    </li>
+
+						<li>
+                      <div class="bigpic_list">
+
+               	    <div class="moren_right_nopic">
+                        	<div class="news_title"><em><a href="//www.chinanews.com/fortune/2018/03-19/8471216.shtml">美联储加息在即 港股资金面或承压</a></em></div>
+                            <div class="intermoren_box">
+
+                            <div class="intermoren_right intermoren_right1">
+                            <div class="news_content"><a href="//www.chinanews.com/fortune/2018/03-19/8471216.shtml" class="gray5">
+
+美联储加息在即 港股资金面或承压
+
+□本报记者 倪伟
+
+本周三美联储货币政策会议即将召开，目前多数观点预计美联储将宣布加息25个基点。虽然美联储的此次加息动作已经被市场充分预期，但对港股市场的资金面仍将产生一定的影响。
+
+市场分析人...</a><a href="//www.chinanews.com/fortune/2018/03-19/8471216.shtml" class="blue">[详情]</a></div>                         
+
+                         <div class="news_source">
+                            <div class="left">2018年3月19日 16:33 </div>
+
+                            </div>
+</div> </div>
+                        </div>
+                        </div>
+
+                    </li>
+
+						<li>
+                      <div class="bigpic_list">
+
+               	    <div class="moren_right_nopic">
+                        	<div class="news_title"><em><a href="//www.chinanews.com/fortune/2018/03-19/8471212.shtml">黑色系经营风险盘根错节 寄望期货“钢铁侠”</a></em></div>
+                            <div class="intermoren_box">
+
+                            <div class="intermoren_right intermoren_right1">
+                            <div class="news_content"><a href="//www.chinanews.com/fortune/2018/03-19/8471212.shtml" class="gray5">
+
+黑色系经营风险盘根错节 寄望期货“钢铁侠”
+
+□本报记者 马爽
+
+今年以来，在错综复杂的政策背景下，黑色产业链期货以及A股相关股票标的波动幅度加大，给黑色产业链企业经营带来了一定的风险，同时也对行业的风险管理水平提出了更高层次的要求...</a><a href="//www.chinanews.com/fortune/2018/03-19/8471212.shtml" class="blue">[详情]</a></div>                         
+
+                         <div class="news_source">
+                            <div class="left">2018年3月19日 16:31 </div>
+
+                            </div>
+</div> </div>
+                        </div>
+                        </div>
+
+                    </li>
+
+						<li>
+                      <div class="bigpic_list">
+
+               	    <div class="moren_right_nopic">
+                        	<div class="news_title"><em><a href="//www.chinanews.com/fortune/2018/03-19/8471211.shtml">场外配资潜行江湖 监管利剑斩“藤”摸“瓜”</a></em></div>
+                            <div class="intermoren_box">
+
+                            <div class="intermoren_right intermoren_right1">
+                            <div class="news_content"><a href="//www.chinanews.com/fortune/2018/03-19/8471211.shtml" class="gray5">
+
+起底北八道操纵市场案背后配资魅影
+
+场外配资潜行江湖 监管利剑斩“藤”摸“瓜”
+
+□本报记者 王朱莹
+
+“北八道集团涉嫌操纵市场案”以其创纪录的天价罚单震惊市场。结合其他受监管层查处的市场操纵案可知，不少操纵市场的资金背后都有着配...</a><a href="//www.chinanews.com/fortune/2018/03-19/8471211.shtml" class="blue">[详情]</a></div>                         
+
+                         <div class="news_source">
+                            <div class="left">2018年3月19日 16:29 </div>
+
+                            </div>
+</div> </div>
+                        </div>
+                        </div>
+
+                    </li>
+
+					<input name="specialid" id="specialid0" value="fortune" type="hidden">
+                    <input name="total_page_total" id="total_page_total0" value="300" type="hidden">	
+					</ul>
+                    <div class="news_lookmore">
+                         <div id="page_bar0"><div style="width:100%;height:30px; background:#f0f0f0;clear:both;line-height:30px; color:#979798; cursor:pointer; font-size:14px;text-align:center" onclick="ongetpage(2,300,0)">&gt;&gt;显示更多新闻</div></div>
+     </div></div>
+
+		</div>
+</div>				
+
+<!--正文右部分-->
+
+<div class="yw_right" style="width:319px;">
+<div style="" class="sticky-pholder" id="sticky_right2"></div>
+             <div style="" class="sticky-rail-right-holder" id="sticky_right">
+  <div class="blank15"></div>
+  <div class="life_title_chihe ">
+
+                <div class="life_title_chihe_left ">金融监管</div>
+               <div class="right1" style="width:218px;"><a href="//channel.chinanews.com/cns/cl/fortune-jgdtyh.shtml"><span style="font-family: '宋体';">十</span>更多</a></div>
+            </div>
+  <div class="right_ul">
+  <ul>
+<li><a href="//www.chinanews.com/fortune/2018/03-15/8468480.shtml">中银协：消费者权益保护融入银行业经营管理各环节</a></li><li><a href="//www.chinanews.com/fortune/2018/03-13/8466534.shtml">“最小股东”为何让A股“问题公司”望而生畏</a></li><li><a href="//www.chinanews.com/fortune/2018/03-10/8464699.shtml">深交所就上市公司重大违法强制退市实施办法征求意见</a></li><li><a href="//www.chinanews.com/fortune/2018/03-07/8461882.shtml">贺强：余额宝都要抢购了 不方便用户</a></li><li><a href="//www.chinanews.com/fortune/2018/03-07/8461628.shtml">人大代表：让打着金融创新幌子的犯罪无处遁形</a></li>
+</ul>
+</div>
+<div class="blank15"></div>
+
+<div class="life_title_chihe ">
+                <div class="life_title_chihe_left">合作专区</div>
+                <div class="right1" style="width:218px;"></div>
+</div>
+<div class="mt10" style="height:440px;overflow:hidden">
+<div class="img-kuang2">
+          <div class="img-167111"><a href="//www.chinanews.com/cj/z/shushuochunjie/index.shtml"><img src="http://www.chinanews.com/fortune2014_home/U592P51T45D33F1417DT20180305101358.jpg" border="0" width="167" height="111"></a></div>	  
+		  <div class="text-167111-bg"><a href="//www.chinanews.com/cj/z/shushuochunjie/index.shtml" class="font-gray666 line-height18">2018数说中国年</a></div>
+    </div>
+
+<div class="img-kuang2">
+          <div class="img-167111"><a href="//www.chinanews.com/life/z/2017dianshang/index.shtml"><img src="http://www.chinanews.com/fortune2014_home/U592P51T45D33F1421DT20180105142235.jpg" border="0" width="167" height="111"></a></div>	  
+		  <div class="text-167111-bg"><a href="//www.chinanews.com/life/z/2017dianshang/index.shtml" class="font-gray666 line-height18">电商大促你中招了吗</a></div>
+    </div>
+
+<div class="img-kuang2">
+          <div class="img-167111"><a href="//www.chinanews.com/life/z/waimai2018/index.shtml"><img src="http://www.chinanews.com/fortune2014_home/U592P51T45D33F1425DT20180109134143.jpg" border="0" width="167" height="111"></a></div>	  
+		  <div class="text-167111-bg"><a href="//www.chinanews.com/life/z/waimai2018/index.shtml" class="font-gray666 line-height18">餐饮新规保舌尖安全</a></div>
+    </div>
+
+<div class="img-kuang2">
+          <div class="img-167111"><a href="//www.chinanews.com/cj/z/zhongshihua2018/index.shtml"><img src="http://www.chinanews.com/fortune2014_home/U592P51T45D33F1429DT20180105161853.jpg" border="0" width="167" height="111"></a></div>	  
+		  <div class="text-167111-bg"><a href="//www.chinanews.com/cj/z/zhongshihua2018/index.shtml" class="font-gray666 line-height18">情暖驿站公益活动</a></div>
+    </div>
+
+<div class="img-kuang2">
+          <div class="img-167111"><a href="//www.chinanews.com/life/z/milkpowder/index.shtml"><img src="http://www.chinanews.com/fortune2014_home/U592P51T45D33F1432DT20180112140430.jpg" border="0" width="167" height="111"></a></div>	  
+		  <div class="text-167111-bg"><a href="//www.chinanews.com/life/z/milkpowder/index.shtml" class="font-gray666 line-height18">奶粉注册制实施</a></div>
+    </div>
+
+<div class="img-kuang2">
+          <div class="img-167111"><a href="//www.chinanews.com/auto/z/ydC1/index.shtml"><img src="http://www.chinanews.com/fortune2014_home/U592P51T45D33F1435DT20180118095947.jpg" border="0" width="167" height="111"></a></div>	  
+		  <div class="text-167111-bg"><a href="//www.chinanews.com/auto/z/ydC1/index.shtml" class="font-gray666 line-height18">弯道超车的中国车企</a></div>
+    </div>
+
+<div class="img-kuang2">
+          <div class="img-167111"><a href="//www.chinanews.com/life/z/zaixianly/index.shtml"><img src="http://www.chinanews.com/fortune2014_home/U592P51T45D33F1438DT20180118173607.jpg" border="0" width="167" height="111"></a></div>	  
+		  <div class="text-167111-bg"><a href="//www.chinanews.com/life/z/zaixianly/index.shtml" class="font-gray666 line-height18">在线旅游说走就走？</a></div>
+    </div>
+
+<div class="img-kuang2">
+          <div class="img-167111"><a href="//www.chinanews.com/cj/z/baijiu/index.shtml"><img src="http://www.chinanews.com/fortune2014_home/U592P51T45D33F1441DT20180305101358.jpg" border="0" width="167" height="111"></a></div>	  
+		  <div class="text-167111-bg"><a href="//www.chinanews.com/cj/z/baijiu/index.shtml" class="font-gray666 line-height18">白酒纷纷涨价为哪般？</a></div>
+    </div>
+    
+
+    </div>
+<div class="blank15"></div>
+
+<div class="life_title_chihe ">
+                <div class="life_title_chihe_left">友情链接</div>
+                <div class="right1" style="width:218px;"></div>
+</div>
+
+<div class="yqlj"><a href="http://finance.qq.com/">腾讯财经</a><a href="http://money.163.com/">网易财经</a><a href="http://finance.sina.com.cn/money/index.shtml">新浪理财</a><a href="http://money.sohu.com/">搜狐理财</a><a href="http://money.people.com.cn/">人民金融</a><a href="http://www.yicai.com/">一财网</a><a href="http://www.p5w.net/">全景网</a><a href="http://www.eastmoney.com/">东方财富网</a><a href="http://www.hexun.com/">和讯网</a><a href="http://www.nbd.com.cn/">每日经济新闻</a><a href="http://www.shagualicai.cn/">傻瓜理财</a><a href="http://www.cyol.net/">中青在线</a><a href="http://fortune.chinanews.com/">经济观察网</a><a href="http://www.cnstock.com/">上海证券报</a><a href="http://wangcaiwang.com/">E财富管理网</a><a href="http://www.asklicai.com//">问理财</a><a href="http://www.cebnet.com.cn/">中国电子银行网</a><a href="http://www.cs.com.cn/">中国证券报</a><a href="http://www.chinamoney.com.cn/index.html">中国货币网</a><a href="http://www.stcn.com/">证券时报</a><a href="http://www.cctvcj.com/sh/">CCTV证券</a><a href="http://www.imeigu.com/">i美股</a><a href="http://www.ceweekly.cn/">中国经济周刊</a><a href="http://www.caijing.com.cn/">财经网</a><a href="http://www.ccstock.cn/">证券日报网</a><a href="http://www.rmbtimes.com/">中金观察</a><a href="http://www.wabei.cn/">挖贝网</a><a href="http://www.ttzqnews.com/">天天证券网</a></div>
+<div class="blank10"></div>
+<div style="clear:both;"></div>
+<!--[4,290,14] published at 2017-04-11 16:02:20 from #10 by 闫兆玉,designer:fangxinkuo  maker:liweiwei zhaoqian -->
+<div class="pagebottom">
+		<div class="pagebottom_nav pagebottom_nav1">
+
+         <a href="/common/footer/intro.shtml">关于我们</a><span>|</span> <a href="//ad.chinanews.com.cn/">广告服务</a><span>|</span> <a href="/common/footer/sitemap.shtml">网站地图</a><div style="display:none;"><span>|</span> <a href="/common/footer/feedback.shtml">留言反馈</a> </div></div>
+
+        <div class="pagebottom_nr pagebottom_nr1">
+
+		<p>本网所刊载信息，不代表中新社和中新网观点</p>
+		<p>刊用本网稿件，务经书面授权<br>违者将追究法律责任。</p>
+		<p>[<a href="/news/xuke.html">网上传播视听节目许可证（0106168）</a>] </p>
+        <p>[<a href="//www.miibeian.gov.cn/">京ICP证040655号</a>] [<a href="//www.miitbeian.gov.cn/">京ICP备05004340号-1</a>]</p>
+        <p>[京公网安备：110102003042]</p>
+<p style="font-family:arial;">Copyright ©1999-
+2018
+
+ chinanews.com. </p>
+<p style="font-family:arial;">All Rights Reserved</p>
+        
+        </div>
+  </div>    
+  <p style="position: absolute;margin-top: -48px;padding-left: 10px;   color: #bfbebe;">页面设计：刘鑫   前端制作：闫兆玉</p>
+</div>
+<div class="clear"></div>
+</div>
+</div>
+</div>
+
+<!--正文结束-->
+
+<!--[4,396,379] published at 2017-11-13 08:41:54 from #10 by 郑振海--> 
+ 
+
+
+</body></html>
