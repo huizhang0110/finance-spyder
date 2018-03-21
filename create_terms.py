@@ -10,7 +10,7 @@ def create_terms_from_content(content):
     terms = []
     content_len = len(content)
     while content:
-        idx = random.randint(4, 31) 
+        idx = random.randint(4, 21) 
         terms.append(content[:idx])
         content = content[idx:]
 
